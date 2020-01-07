@@ -4,4 +4,6 @@ const connect = require('connect'),
 
 const app = connect();
 app.use(serveStatic(fs.realpathSync('../')));
-app.listen(8090);
+const port = 8090;
+console.log('localhost:' + port);
+app.listen(port);
